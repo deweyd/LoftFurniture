@@ -1,0 +1,165 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 0 0 calc(25% - 20px);
+  margin-bottom: 25px;
+  background: #FFF;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.11);
+  &:hover{
+
+  }
+
+
+  &__about{
+    padding: 0 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__average{
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+  }
+  &__img{
+    margin-bottom: 10px;
+    padding: 20px;
+    img{
+      width: 100%;
+    }
+  }
+  &__name, &__text, &__price{
+    font-size: 16px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  &__text{
+    font-size: 11px;
+    font-weight: 400;
+  }
+  &__date{
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.swiper-wrapper {
+  .card{
+    width: 100%;
+  }
+  .card__img{
+    padding: 0;
+  }
+}
+
+.page{
+  &__describe{
+    display: flex;justify-content: space-between;
+  }
+  &__slider{
+    width: 50%;
+  }
+  &__about{
+    width: 45%;
+    text-align: left;
+  }
+}
+.page{
+  &__describes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__subtitle{
+    color: #686868;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+  }
+  &__button{
+    width: 143px;
+    height: 40px;
+    flex-shrink: 0;
+    background: #245462;
+    display: flex;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+  &__choose{
+    margin-top: 20px;
+    .filter__number, .filter__size{
+      margin-bottom: 20px;
+      label{
+        color: #414141;
+        font-family: Roboto, sans-serif;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      select{
+        color: #414141;
+        font-family: Roboto, sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  &__describes{
+    color: #686868;
+    span{
+      display: block;
+      margin-bottom: 10px;
+      color: #414141;
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 148.688%;
+  }
+  &__price{
+    font-family: Roboto, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-right: 30px;
+  }
+  &__pay{
+    display: flex;
+  }
+  &__title{
+    font-size: 28px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 20px 0;
+  }
+}

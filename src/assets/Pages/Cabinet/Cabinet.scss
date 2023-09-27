@@ -1,0 +1,128 @@
+.cabinet{
+  &__date{
+    text-align: left;
+    padding: 11px 15px;
+    border: 1px solid #68686896;
+    border-bottom: none;
+    background: #FFF;
+    color: #686868;
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 147.687%;
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    .contacts__left-block{
+      height: max-content;
+    }
+    .cabinet__table table td:first-child {
+      width: 80px;
+    }
+    .cabinet__table table td:last-child{
+      width: 80px;
+    }
+    .cabinet__table table td:nth-of-type(3){
+      width: 150px;
+    }
+  }
+  &__table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    //&>div{
+    //  width: calc(33% - 20px);
+    //  flex: 0 0 calc(33.33% - 20px);
+    //}
+    &>div:last-child{
+      &>div:last-child{
+        tr:last-child{
+          display: none;
+        }
+      }
+    }
+    table{
+      width: 100%;
+      margin-bottom: 20px;
+      td:first-child{
+        width: 80%;
+      }
+      td{
+        img{
+          width: 100%;
+          max-width: 80px;
+        }
+      }
+    }
+  }
+  table, th, td {
+    text-align: left;
+    padding: 11px 15px;
+    border: 1px solid #68686896;
+    background: #FFF;
+    color: #686868;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 147.687%;
+  }
+  .contacts__right-block{
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.cabinet__form{
+  .contacts__input input{
+    pointer-events: none;
+    background: none;
+    border: none;
+    background: white;
+    font-size: 18px;
+    &.disabled{
+      pointer-events: inherit;
+      background: #FCFCFC;
+      box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.07) inset;
+    }
+  }
+  .contacts__left-block{
+    max-width: 700px;
+  }
+  .contacts__right-block{
+    margin: 0;
+  }
+}
+.cabinet__date+div>table>tbody div:last-child{
+  display: none;
+}
+.cabinet table th{
+  font-weight: bold;
+  font-size: 14px;
+}
+.cabinet__table{
+  table{
+    tbody:last-child{
+      display: none;
+    }
+  }
+}
+.orders__user{
+  display: flex;
+  margin-bottom: 20px;
+  div{
+    margin-right: 15px;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 10px;
+  }
+}
+.info-autho{
+  font-size: 24px;
+  padding: 150px 0 150px;
+  display: block;
+}

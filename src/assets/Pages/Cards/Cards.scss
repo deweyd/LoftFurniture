@@ -1,0 +1,33 @@
+.content, .content.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  &__aside {
+    flex: 0 0 21%;
+    padding: 20px 20px 20px;
+  }
+
+  &__main {
+    flex: 0 0 100% !important;
+    width: 100%;
+
+  }
+}
+.content{
+  flex-direction: column;
+}
+.load-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #81BECB;
+  color: black;
+  font-size: 25px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

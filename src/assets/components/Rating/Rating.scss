@@ -1,0 +1,32 @@
+.star {
+  display: flex;
+  flex-wrap: wrap;
+  p{
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+}
+
+.star__item {
+  margin: 2px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.fa.fa-star.star__item_active{
+  color: rgb(255, 195, 48);
+}
+
+.star__item_select {
+  color: rgb(255, 195, 48);
+}
+
+.star__item_active {
+  color: black;
+}
+
+.star__item_active.star__item_select {
+  color: rgb(255, 134, 0);
+}

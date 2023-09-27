@@ -1,0 +1,22 @@
+.header{
+  //background: radial-gradient(1009.23% 696.22% at 47.60% 26.27%, #181A19 0%, #24282B 68.62%);
+  box-shadow: 0px 7px 16px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+  .container-wrap{
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: column;
+  }
+  &__top{
+    background: #313131;
+    height: 38px;
+  display: flex;
+    align-items: center;
+  }
+  &__main{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+}

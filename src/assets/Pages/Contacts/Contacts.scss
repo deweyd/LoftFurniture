@@ -1,0 +1,202 @@
+.about{
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 80px;
+  }
+  &__img{
+    width: 48%;
+    img{
+      width: 100%;
+    }
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 48%;
+    &-subtitle{
+      color: #245462;
+      font-family: Roboto, sans-serif;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.96px;
+      margin-bottom: 20px;
+    }
+    &-title{
+      color: #414141;
+      font-family: Roboto, sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 20px;
+    }
+    &-text{
+      color: #686868;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140.188%; /* 19.626px */
+    }
+  }
+}
+.saving{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 170px;
+  &__item{
+    flex: 1;
+    min-width: calc(33.3% - 10px);
+    margin: 5px;
+    padding: 20px 0;
+    margin-bottom: 80px;
+  }
+  &__info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  &__text, &__text-{
+    margin-bottom: 20px;
+    color: #414141;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  &__title{
+    width: 100%;
+    color: #414141;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.188%;
+    margin-bottom: 75px;
+  }
+}
+.order{
+    margin: 70px 0;
+  display: flex;
+  flex-wrap: wrap;
+  &__item{
+    flex: 1;
+    min-width: calc(50% - 10px);
+    margin: 5px;
+    padding: 20px 0;
+    margin-bottom: 80px;
+  }
+  &__title{
+    color: #414141;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.27px;
+    margin-bottom: 10px;
+  }
+  &__text{
+    color: #686868;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.188%;
+  }
+}
+.offers{
+  background: #D7E8ED;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 65px;
+  }
+  &__text{
+    color: #686868;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.188%;
+  }
+  &__title{
+    color: #414141;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.27px;
+  }
+}
+.benefit{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 90px;
+  &__item{
+    flex: 1;
+    min-width: calc(50% - 10px);
+    margin: 5px;
+    padding: 20px 0;
+    margin-bottom: 80px;
+    &-text{
+      color: #686868;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140.188%;
+      text-align: left;
+      span{
+        color: #414141;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.27px;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__title{
+    color: #414141;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.36px;
+  }
+}
+
+
+
+@media screen and (max-width: 567px) {
+  .benefit__item {
+    flex: 1 100%;
+    min-width: 100%;
+  }
+}

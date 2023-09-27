@@ -1,0 +1,72 @@
+.example input[type=text] {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  background: transparent;
+  font-size: 14px;
+}
+.example{
+  display: flex;
+  border: 1px solid #E6E6E6;
+  padding: 0px 30px;
+  flex-shrink: 0;
+  justify-content: space-between;
+  color: #61dafb;
+  background: white;
+  input{
+    height: 50px;
+  }
+
+}
+
+.search-block{
+  position: relative;
+  width: 73%;
+  height: 54px;
+  z-index: 2;
+  background: white;
+  .selection__cards{
+    display: none;
+  }
+}
+.search-block.active .example .selection__cards{
+  position: absolute;
+  width: 91%;
+  padding: 0;
+  display: flex;
+  background: white;
+  max-height: 600px;
+  overflow-y: scroll;
+  border: none;
+  top: 57px;
+  box-shadow: 0px 1px 9px 0px rgba(0, 0, 0, 0.11);
+  .card{
+    margin-bottom: 5px;
+  }
+}
+.example button {
+  padding: 10px;
+  background: transparent;
+  outline: none;
+  font-size:20px;
+  border: none;
+  cursor: pointer;
+  transform: rotate(45deg);
+  img{
+    width: 29px;
+    height: 29px;
+  }
+}
+.button-search{
+  display: flex;
+  align-items: center;
+}
+.search-button{
+  display: none;
+}
+.search-button.active{
+  display: block;
+}
+
+
+

@@ -1,0 +1,437 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.actors{
+  border-radius: 5px;
+  border: 1px solid #2B2B2B;
+  background: #212121;
+  width: 100%;
+  padding: 15px;
+  margin: 15px;
+  &__title{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 30px;
+    display: inherit;
+    color: white;
+  }
+}
+
+@media (max-width: 1628px) {
+
+  .content .movie__about{
+    width: 100%;
+  }
+  .content .movie__points{
+    display: none;
+  }
+  .tile_average{
+    width: 48%;
+  }
+  .movie{
+    flex-direction: column;
+  }
+  .tile_small{
+    width: 31%;
+  }
+  .content{
+    flex-direction: column;
+    .tile_small{
+      max-width: none;
+      width: 30%;
+    }
+  }
+  .content .tile_average{
+    max-width: none;
+    width: 47%;
+  }
+  .content .content__main{
+    width: 100%;
+    max-width: 100%;
+  }
+  .content__aside{
+    width: 100%;
+    max-width: 100%;
+  }
+  .content .movie__item{
+    width: 100%;
+    margin: 50px 0;
+  }
+  .content .popular-box__item{
+    display: none;
+    &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4), &:nth-of-type(5){
+      display: flex;
+    }
+  }
+  .content .popular-box__img {
+    width: 300px;
+    height: 453px;
+  }
+  .content .popular-box{
+    display: none;
+  }
+  .footer__top .logo {
+    min-width: 287px;
+    margin-right: 50px;
+  }
+  .footer{
+    width: 100%;
+  }
+  .footer__menu {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 1358px){
+  //.header{
+  //  height: 195px;
+  //}
+  .admin .basket__subtitle textarea {
+    min-width: 500px;
+  }
+  .delivery .delivery__main{
+    flex-direction: column;
+    .delivery__info, .delivery__img{
+      width: 100%;
+    }
+  }
+  .admin .admin__box {
+    width: 98.5%;
+  }
+  .search-block.active .example .selection__cards .card {
+    flex: 0 0 calc(24% - 10px) !important;
+  }
+  .selection__cards{
+    justify-content: space-between;
+  }
+  .content .card{
+    flex: 0 0 calc(32% - 10px) !important;
+  }
+  .content{
+    .tile_small{
+      width: 47%;
+      margin-right: 0;
+    }
+  }
+  .footer{
+    .footer__bottom{
+      flex-direction: column;
+    }
+    .footer__law{
+      margin-bottom: 20px;
+    }
+    .footer__politic{
+      margin: 20px 0;
+    }
+  }
+  .header .container-wrap{
+    flex-direction: column;
+  }
+  .footer__top .container-wrap{
+    flex-direction: column;
+  }
+  .footer__top .logo{
+    height: auto;
+  }
+}
+@media (max-width: 867px){
+  .content .card {
+    flex: 0 0 calc(32% - 10px) !important;
+  }
+  .admin .admin__box {
+    width: 100%;
+  }
+  .admin .basket__subtitle textarea {
+    min-width: 300px;
+  }
+  .page{
+    .page__describe{
+      flex-direction: column;
+    }
+    .page__slider, .page__about{
+      width: 100%;
+    }
+  }
+  .basket{
+    .basket__price{
+      margin-top: 20px;
+    }
+    .basket__item{
+      flex-direction: column;
+      align-items: flex-start;
+      width: 92%;
+    }
+  }
+  .payment .payment__img {
+    width: 100%;
+  }
+  .footer__bottom-right ul {
+    flex-direction: column;
+    align-items: flex-start;
+    li{
+      margin-bottom: 10px;
+    }
+  }
+  .contacts__form{
+    flex-direction: column;
+    .contacts__left-block, .contacts__right-block{
+      width: 100%;
+      margin: 5px 5px 20px 0px;
+    }
+    .footer__bottom-right{
+      margin-top: 0!important;
+    }
+  }
+  .contacts .map__title{
+    margin-top: 0;
+  }
+  .search-block.active .example .selection__cards .card {
+    flex: 0 0 calc(50% - 10px) !important;
+  }
+  .header__menu{
+    overflow-x: scroll;
+  }
+  .menu__main ul span {
+    min-width: 22px;
+  }
+  .menu__main ul li a{
+    white-space: nowrap;
+  }
+  .about__top {
+    flex-direction: column;
+  }
+  .about__top .about__info, .about__top .about__img{
+    width: 100%;
+  }
+  .about .about__top {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .about{
+    .benefit__title{
+      margin-bottom: 30px;
+    }
+    .benefit__item{
+      margin-bottom: 30px;
+    }
+    .about__benefit.benefit{
+      margin-bottom: 30px;
+    }
+    .offers {
+      padding: 30px 0;
+    }
+    .offers__item{
+      margin-bottom: 30px;
+    }
+    .order {
+      margin: 30px 0;
+    }
+    .saving__title, .saving, .saving__item{
+      margin-bottom: 30px;
+    }
+    .order__item{
+      margin-bottom: 30px;
+    }
+  }
+}
+@media (max-width: 680px){
+  .header__left{
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .admin .basket__subtitle textarea {
+    min-width: 200px;
+    height: 200px;
+    margin-right: 0;
+  }
+  .admin{
+    .admin__top{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .admin__top-left{
+      flex-direction: column;
+      margin-bottom: 20px;
+      align-items: flex-start;
+      button{
+        margin-left: 0;
+      }
+    }
+    .admin__top-right .admin__button{
+      margin-left: 0;
+    }
+    .admin__top-right{
+      margin-bottom: 30px;
+    }
+    .basket__img {
+      max-width: 75px;
+      margin-right: 20px;
+    }
+    .basket__subtitle.basket__group{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  .search-block.active .example .selection__cards .card {
+    flex: 0 0 calc(100% - 10px) !important;
+    align-items: center;
+  }
+  .content .tile_average .tile__name{
+    font-size: 40px;
+  }
+  .content .movie__left-box {
+    position: relative;
+    width: 100%;
+    margin: 0;
+  }
+  .card:nth-child(4n+4) {
+    margin-right: 0;
+  }
+  .card:nth-child(2n+2) {
+    margin-right: 0;
+  }
+  .content .selection__title{
+    font-size: 30px;
+  }
+  .tile_big{
+    .tile__name{
+      font-size: 40px;
+    }
+  }
+  .content .tile_average{
+    width: 100%;
+    margin-right: 0;
+  }
+  .content .tile_small{
+    width: 100%;
+  }
+  .content .movie__item{
+    flex-direction: column;
+  }
+  .content .movie__about{
+    width: 100%;
+  }
+  .footer__menu{
+    display: none;
+  }
+  .footer__caption{
+    display: none;
+  }
+  .footer__box{
+    flex-direction: column;
+  }
+  .content .person-page{
+    flex-direction: column;
+  }
+  .content .person-page__left-box{
+    margin-right: 0;
+  }
+  .content .person-page__right-box{
+    width: 100%;
+  }
+  .footer__right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 567px){
+  .content .card {
+    flex: 0 0 calc(49% - 10px) !important;
+  }
+  .cabinet__form{
+    .contacts__input{
+      width: 100%;
+    }
+  }
+  .basket{
+    .basket__num{
+      margin-top: 20px;
+    }
+    .basket__main{
+      flex-direction: column;
+    }
+  }
+  .about .saving__item{
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 0;
+  }
+  .about .order__item{
+    min-width: 100%;
+  }
+  .users {
+    order: 2;
+  }
+  .header .search-block.active .example .selection__cards{
+    width: 100%;
+    left: 0;
+  }
+  .header .search-block {
+    width: 100%;
+    order: 3;
+  }
+  .header__main{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 460px){
+  .menu__top-main {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  .contacts__form{
+    .contacts__input{
+      width: 100%;
+    }
+  }
+  .menu__top-main ul:first-child{
+    margin-bottom: 7px;
+  }
+  .content .selection__title {
+    font-size: 25px;
+  }
+  .content .selection {
+    margin-bottom: 0px;
+  }
+  .selection__cards {
+    padding-top: 20px;
+  }
+  .header .header__main {
+    padding: 20px 0 0;
+  }
+  .content .main-slider {
+    margin-bottom: 0;
+     .swiper-pagination {
+      display: none;
+    }
+  }
+  .container-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .content .card {
+    align-items: center;
+    flex: 0 0 calc(100% - 10px) !important;
+  }
+  .header .header__top{
+    height: auto;
+  }
+  .footer__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu__footer ul {
+    justify-content: center;
+  }
+  .footer__bottom-left ul, .footer__bottom-right ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
