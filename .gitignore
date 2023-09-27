@@ -11,8 +11,8 @@ node_modules
 dist
 dist-ssr
 *.local
-# Игнорировать файл useFirebase.js
-src/assets/hooks
+
+
 
 # Editor directories and files
 .vscode/*
